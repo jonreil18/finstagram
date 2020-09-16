@@ -1,5 +1,5 @@
 <ul class = "errors">
-    <% @user.errors.full_messages.each do |message| %>\
+    <% @user.errors.full_messages.each do |message| %>
         <li><%= message %></li>
     <% end %>
 </ul>
@@ -11,7 +11,7 @@
     </div>
     <div class = "form-group">
         <label for = "avatar_url"> Avatar URL </label>
-        <input type = "text" id = "avatar_url" name = "username" value = "<%= @user.avatar_url %>">
+        <input type = "text" id = "avatar_url" name = "avatar_url" value = "<%= @user.avatar_url %>">
     </div>
     <div class = "form-group">
         <label for = "username"> Username </label>
